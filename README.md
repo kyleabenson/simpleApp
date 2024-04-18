@@ -1,3 +1,16 @@
+
+
+python3 -m venv venv
+source ./venv/bin/activate
+pip3 install -r requirements.txt 
+opentelemetry-bootstrap -a install
+
+opentelemetry-instrument --traces_exporter console --metrics_exporter console  --logs_exporter console --service_name dice-server  uvicorn main:app
+FYI the --reload flag breaks instrumentation
+
+
+
+
 # New Project Template
 
 This repository contains a template that can be used to seed a repository for a

@@ -1,0 +1,6 @@
+FastAPI
+opentelemetry-api
+opentelemetry-sdk
+uvicorn
+opentelemetry-distro
+opentelemetry-exporter-otlp
